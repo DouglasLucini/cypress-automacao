@@ -8,6 +8,7 @@ describe ('Cadastro', () =>{
             cy.get('#loginUsuario div div div input').type('douglas.correa')
             cy.get('#loginSenha div div div input').type ('Dgs##40506098')
             cy.get ('#submit-button span p').click()
+            cy.wait(3000)
             cy.contains('Perfil Completo').click()
         })
 
